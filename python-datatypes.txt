@@ -1,0 +1,12 @@
+The nine canonical datatypes in Python:
+
+1) Boolean
+2) Number
+3) String
+4) Byte and Byte arrays
+5) None (null)
+6) Lists
+7) Tuples
+8) Sets
+9) Dictionaries
+
