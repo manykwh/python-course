@@ -17,4 +17,15 @@ print(product_cost * qty) # 42962.40000000000282883716451 i hope i typed that ri
 
 # ------------
 # ...
+print("...")
+
+numerator = Decimal("1")
+denominator = Decimal("3")
+print(numerator/denominator)
+print(Decimal("0.3") + Decimal("0.3") + Decimal("0.3") + Decimal("0.1"))
+
+print(" that vs this ")
+
+print(1.0/3.0)
+print (0.3 + 0.3 + 0.3 + 0.1)
 
