@@ -10,7 +10,7 @@ def dynamic_reducer(collection, op):
         elif op == "*":
             result *= float(element)
         else:
-            print("error: operator {0} is not an operator ".format(op)) # unreachable
+            print("error: operator {0} is not an operator ".format(op))
     return result
 
 total = dynamic_reducer([1, 2, 3], "+")
