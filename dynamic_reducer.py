@@ -1,15 +1,6 @@
 def dynamic_reducer(collection, op):
-    if op == "/" or op == "-":
-        result = float(collection[0])
-    elif op == "*":
-        result = float(1)
-    elif op == "+":
-        result = float(0)
-    else:
-        print("error: operator {0} is not an operator ".format(op))
-        return 0
-
-    for element in collection:
+    result = float(collection[0])
+    for element in collection[1:]:
         if op == "+":
             result += float(element)
         elif op == "-":
@@ -24,4 +15,12 @@ def dynamic_reducer(collection, op):
 
 total = dynamic_reducer([1, 2, 3], "+")
 print (total)
+total = dynamic_reducer([1, 2, 3], "/")
+print (total)
+
+print(dynamic_reducer([1, 2, 250], '+'))
+print(dynamic_reducer([1, 2, 3], '-'))
+print(dynamic_reducer([1, 2, 55], '*'))
+print(dynamic_reducer([100, 2, 3], '/'))
+
 
