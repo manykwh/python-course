@@ -1,10 +1,10 @@
 class Invoice:
     def __init__(self, client, total):
-        self._client = client
-        self._total = total
+        self.__client = client
+        self.__total = total
 
     def formatter(self):
-        return f'{self._client} owes: ${self._total}'
+        return f'{self.__client} owes: ${self.__total}'
 
 google = Invoice('Google', 100)
 print(google.formatter())
