@@ -12,7 +12,7 @@ class Invoice:
 
     @client.setter
     def client(self, client):
-        self._client = client
+        self.__client = client
 
     @property
     def total(self):
@@ -24,8 +24,5 @@ google = Invoice("Google", 100)
 print(google.formatter())
 print(google.client)
 google.client = "Yahoo"
-print(google.client)
-# notice how the client has not actually changed, it's still google
-google.client("Yahoo")
 print(google.client)
 
