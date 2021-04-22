@@ -70,7 +70,7 @@ def guide_update(id):
     return guide_schema.jsonify(guide)
 
 
-@app.route('/guide/<id', methods=["DELETE"])
+@app.route('/guide/<id>', methods=["DELETE"])
 def guide_delete(id):
     guide = Guide.query.get(id)
     db.session.delete(guide)
